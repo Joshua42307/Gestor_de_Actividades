@@ -1,0 +1,165 @@
+
+/* Configuración general de la página */
+* {
+    box-sizing: border-box;
+}
+
+/* Fondo y tipo de letra */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #EEF3F5;
+    color: #303C42;
+}
+
+/* Encabezado principal */
+header {
+    background-color: #234B52;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Título del encabezado */
+header h1 {
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+
+/* Texto debajo del título */
+header p {
+    color: #C5DADC;
+}
+
+/* Área principal de contenido */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Tarjetas blancas */
+.contenedor {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px #263D4515;
+}
+
+/* Encabezados secundarios */
+h2 {
+    color: #234B52;
+}
+
+/* Distribución del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Texto de las etiquetas */
+label {
+    font-weight: bold;
+    color: #315C63;
+}
+
+/* Campos para ingresar información */
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #C8D8DA;
+    border-radius: 8px;
+    background-color: #F8FAFA;
+    color: #303C42;
+    font-size: 15px;
+}
+
+/* Efecto al seleccionar los campos */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #319B91;
+    box-shadow: 0 0 0 2px #319B9120;
+}
+
+/* Área para escribir la descripción */
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+/* Diseño de los botones */
+button {
+    background-color: #287F78;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Cambio de color al pasar el cursor */
+button:hover {
+    background-color: #1D625D;
+}
+
+/* Botón para cancelar */
+#btnCancelar {
+    background-color: #75868A;
+}
+
+/* Oculta el botón cuando no se utiliza */
+#btnCancelar[hidden] {
+    display: none;
+}
+
+/* Diseño de cada actividad registrada */
+.tarea {
+    background-color: #F5F9F9;
+    border: 1px solid #D7E4E5;
+    border-left: 5px solid #319B91;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 9px;
+}
+
+/* Nombre de cada actividad */
+.tarea h3 {
+    margin-top: 0;
+    color: #234B52;
+}
+
+/* Texto del estado */
+.estado {
+    font-weight: bold;
+    color: #287F78;
+}
+
+/* Espacio entre los botones de cada actividad */
+.acciones {
+    display: flex;
+    gap: 10px;
+}
+
+/* Los botones ocupan el mismo espacio */
+.acciones button {
+    flex: 1;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    .contenedor {
+        padding: 15px;
+    }
+
+    .acciones {
+        flex-direction: column;
+    }
+}

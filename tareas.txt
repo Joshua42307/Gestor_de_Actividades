@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "nombre": "Examen",
+    "descripcion": "Realizar un examen de un gestor de tareas",
+    "estado": "Terminada"
+  },
+  {
+    "id": 2,
+    "nombre": "Tarea De Gestor de Actividades",
+    "descripcion": "Realizar un video de prueba",
+    "estado": "En proceso"
+  }
+]
